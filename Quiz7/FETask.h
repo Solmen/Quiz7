@@ -1,15 +1,19 @@
 //
 //  FETask.h
-//  Quiz5FromEmpty
+//  Quiz7
 //
-//  Created by Michael Toth on 3/16/14.
-//  Copyright (c) 2014 Michael Toth. All rights reserved.
+//  Created by Samuel Tolkin on 4/11/14.
+//  Copyright (c) 2014 Samuel Tolkin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
 
 @interface FETask : NSManagedObject
+
+@property (nonatomic, retain) NSDate * dueDate;
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic) float urgency;
-@property (nonatomic, retain) NSDate *dueDate;
-@property (nonatomic, retain) NSString *taskName;
+
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FETask.h"
 #import <CoreData/CoreData.h>
 
 @interface Quiz7MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>

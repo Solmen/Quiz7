@@ -25,7 +25,7 @@
 		2664D77C18F2ECBA007C1D29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2664D75718F2ECB9007C1D29 /* CoreData.framework */; };
 		2664D78418F2ECBA007C1D29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2664D78218F2ECBA007C1D29 /* InfoPlist.strings */; };
 		2664D78618F2ECBA007C1D29 /* Quiz7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2664D78518F2ECBA007C1D29 /* Quiz7Tests.m */; };
-		2664D79118F2ECF4007C1D29 /* FETask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2664D79018F2ECF4007C1D29 /* FETask.m */; };
+		26F48BB918F816F700180D72 /* FETask.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F48BB818F816F700180D72 /* FETask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,8 @@
 		2664D78118F2ECBA007C1D29 /* Quiz7Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quiz7Tests-Info.plist"; sourceTree = "<group>"; };
 		2664D78318F2ECBA007C1D29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2664D78518F2ECBA007C1D29 /* Quiz7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz7Tests.m; sourceTree = "<group>"; };
-		2664D78F18F2ECF4007C1D29 /* FETask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FETask.h; sourceTree = "<group>"; };
-		2664D79018F2ECF4007C1D29 /* FETask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FETask.m; sourceTree = "<group>"; };
+		26F48BB718F816F700180D72 /* FETask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FETask.h; sourceTree = "<group>"; };
+		26F48BB818F816F700180D72 /* FETask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FETask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +133,10 @@
 				2664D76C18F2ECBA007C1D29 /* Quiz7MasterViewController.m */,
 				2664D76E18F2ECBA007C1D29 /* Quiz7DetailViewController.h */,
 				2664D76F18F2ECBA007C1D29 /* Quiz7DetailViewController.m */,
-				2664D78F18F2ECF4007C1D29 /* FETask.h */,
-				2664D79018F2ECF4007C1D29 /* FETask.m */,
 				2664D77118F2ECBA007C1D29 /* Images.xcassets */,
 				2664D76818F2ECBA007C1D29 /* Quiz7.xcdatamodeld */,
+				26F48BB718F816F700180D72 /* FETask.h */,
+				26F48BB818F816F700180D72 /* FETask.m */,
 				2664D75A18F2ECBA007C1D29 /* Supporting Files */,
 			);
 			path = Quiz7;
@@ -270,7 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2664D77018F2ECBA007C1D29 /* Quiz7DetailViewController.m in Sources */,
-				2664D79118F2ECF4007C1D29 /* FETask.m in Sources */,
+				26F48BB918F816F700180D72 /* FETask.m in Sources */,
 				2664D76A18F2ECBA007C1D29 /* Quiz7.xcdatamodeld in Sources */,
 				2664D76D18F2ECBA007C1D29 /* Quiz7MasterViewController.m in Sources */,
 				2664D76018F2ECBA007C1D29 /* main.m in Sources */,
@@ -483,6 +483,7 @@
 				2664D78B18F2ECBA007C1D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2664D78C18F2ECBA007C1D29 /* Build configuration list for PBXNativeTarget "Quiz7Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				2664D78E18F2ECBA007C1D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

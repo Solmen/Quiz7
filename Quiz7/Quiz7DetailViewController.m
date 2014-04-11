@@ -17,7 +17,7 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setDetailItem:(FETask *)newDetailItem
 {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
@@ -32,7 +32,7 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        [self.taskName setText:[self.detailItem taskName]];
+        [self.taskName setText:[self.detailItem name]];
         [self.slider setValue:[self.detailItem urgency]];
         [self.date setDate:[self.detailItem dueDate]];
         
@@ -47,6 +47,10 @@
     [self configureView];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -57,17 +61,11 @@
 {
     
     [[self view] endEditing:YES];
-    [self.detailItem setTaskName:[self.taskName text]];
+    [self.detailItem setName:[self.taskName text]];
     [self.detailItem setUrgency:[self.slider value]];
     [self.detailItem setDueDate:[self.date date]];
     
     [self.presentingViewController dismissViewControllerAnimated:NO completion:dismissBlock];
     
 }
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
-}
-
 @end
